@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Candidato — SGC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="logo-SGC-2.1.png" alt="Logo do Site" class="logo"></a>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="listar_candidatos.php">Listar Candidatos</a>
+    <a href="sobre.html">
+      Sobre o SGC
+    </a>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h2>Cadastro de Candidato</h2>
+
+      <!--
+        action: envia os dados para salvar_candidato.php
+        method="post": dados enviados no corpo da requisição
+        (mais seguro que GET para dados pessoais)
+      -->
+      <form action="salvar_candidato.php"
+            method="post">
+                    <!-- Campo: Nome completo -->
+        <div class="form-group">
+          <label for="nome">Nome Completo:</label>
+          <!-- required: validação nativa do HTML5 -->
+          <input type="text" id="nome"
+                 name="nome"
+                 placeholder="Ex: Iasmim Lara"
+                 required>
+        </div>
+
+
+                    <!-- Campo: Nome completo -->
+        <div class="form-group">
+          <label for="nomeMae">Nome Da Mãe:</label>
+          <!-- required: validação nativa do HTML5 -->
+          <input type="text" id="nomeMae"
+                 name="nomeMae"
+                 placeholder="Ex: Patrícia Lima"
+                 required>
+        </div>
+
+        <!-- Campo: Data de Nascimento -->
+        <div class="form-group">
+          <label for="data_nascimento">Data de Nascimento:</label>
+          <input type="date" id="data_nascimento"
+              name="data_nascimento"
+              required>
+        </div>
+
+        <!-- Campo: LinkedIn -->
+        <div class="form-group">
+          <label for="linkedin">LinkedIn:</label>
+          <input type="text" id="linkedin"
+              name="linkedin"
+              placeholder="Ex: https://linkedin.com/in/seunome">
+        </div>
+
+        <!-- Campo: Portfólio -->
+        <div class="form-group">
+          <label for="portfolio">Portfólio:</label>
+          <input type="text" id="portfolio"
+             name="portfolio"
+             placeholder="Ex: https://github.com/seunome">
+        </div>
+
+        <!-- Campo: E-mail -->
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <!-- type="email": valida formato de e-mail -->
+          <input type="email" id="email"
+                 name="email"
+                 placeholder="Ex: iasmim@gmail.com"
+                 required>
+        </div>
+
+
+        <!-- Campo: Telefone -->
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone"
+                 name="telefone"
+                 placeholder="Ex: (61) 99999-9999">
+        </div>
+
+        <!-- Campo: Objetivo profissional -->
+        <div class="form-group">
+          <label for="objetivo">Objetivo:</label>
+          <!-- textarea: campo de texto multilinha -->
+          <textarea id="objetivo" name="objetivo"
+            placeholder="Descreva seu objetivo profissional..."
+          ></textarea>
+        </div>
+
+        <!-- Campo: Formação acadêmica -->
+        <div class="form-group">
+          <label for="formacao">Formação:</label>
+          <textarea id="formacao" name="formacao"
+            placeholder="Ex: Técnico em TI — ETB (2026)"
+          ></textarea>
+        </div>
+
+        <!-- Campo: Experiência profissional -->
+        <div class="form-group">
+          <label for="experiencia">Experiência:</label>
+          <textarea id="experiencia"
+                    name="experiencia"
+            placeholder="Descreva suas experiências..."
+          ></textarea>
+        </div>
+
+        <!-- Campo: Habilidades -->
+        <div class="form-group">
+          <label for="habilidades">Habilidades:</label>
+          <textarea id="habilidades"
+                    name="habilidades"
+            placeholder="Ex: PHP, MySQL, HTML, CSS, JAVA..."
+          ></textarea>
+        </div>
+
+
+        <h3>Endereço</h3>
+
+        <div class="form-group">
+          <label for="logradouro">Logradouro:</label>
+          <input type="text" id="logradouro" name="logradouro" required>
+        </div>
+
+        <div class="form-group">
+          <label for="numero">Número:</label>
+          <input type="text" id="numero" name="numero" required>
+        </div>
+
+        <div class="form-group">
+          <label for="complemento">Complemento:</label>
+          <input type="text" id="complemento" name="complemento">
+        </div>
+
+        <div class="form-group">
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
+        </div>
+
+        <div class="form-group">
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" required>
+        </div>
+
+        <div class="form-group">
+          <label for="pais">País:</label>
+          <input type="text" id="pais" name="pais" required>
+        </div>
+
+        <!-- Botões de ação -->
+        <button type="submit"
+                class="btn btn-success">
+          Salvar Candidato
+        </button>
+        <a href="index.html"
+           class="btn btn-danger">
+          Cancelar
+        </a>
+
+      </form>
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+<footer>
+    <!-- Utiliza o script abaixo para buscar o ano atual -->
+    <p>&copy; <span id="anoAtual"></span> — SGC — PEAR Sistemas de Informação S.A.
+  </br>
+    Todos os direitos reservados.</p>
+
+<script>
+    //busca o ano atual com a função Date()
+    document.getElementById("anoAtual").innerHTML = new Date().getFullYear();
+</script>
+
+</footer>
+
+</body>
+</html>
