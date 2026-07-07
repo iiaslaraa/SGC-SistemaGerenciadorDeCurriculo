@@ -128,15 +128,6 @@ http://localhost/SGC/
 * Exportação de currículos em PDF
 * Responsividade para dispositivos móveis
 
----
-
-## Desenvolvedora
-
-**Iasmim Lima Lara Cardoso**
-
-Curso Técnico em Informática
-
-Escola Técnica de Brasília (ETB)
 
 ---
 
