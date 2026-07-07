@@ -1,64 +1,115 @@
+<div align="center">
+
 # 📄 Sistema de Gerenciamento de Currículos (SGC)
 
-Sistema web desenvolvido para a disciplina de Desenvolvimento Web do Curso Técnico em Informática da Escola Técnica de Brasília (ETB).
+### *Curriculum Management System*
 
-O SGC (Sistema de Gerenciamento de Currículos) permite cadastrar, consultar, editar e excluir informações de candidatos, armazenando todos os dados em um banco de dados MySQL.
+Projeto acadêmico desenvolvido durante o **Curso Técnico em Informática** da **Escola Técnica de Brasília (ETB)**.
+
+Aplicando conceitos de **Desenvolvimento Web**, **PHP**, **MySQL**, **Modelagem de Banco de Dados** e **CRUD**.
+
+<br>
+
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
+
+![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge\&logo=php\&logoColor=white)
+
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+
+![License](https://img.shields.io/badge/Licença-Acadêmica-blue?style=for-the-badge)
+
+</div>
 
 ---
 
-## Objetivo
+# 📚 Sobre o Projeto
 
-Desenvolver uma aplicação web capaz de gerenciar currículos de candidatos de forma simples, organizada e intuitiva, aplicando conceitos de desenvolvimento web, banco de dados relacionais e integração entre PHP e MySQL.
+O **Sistema de Gerenciamento de Currículos (SGC)** é uma aplicação web desenvolvida para centralizar o gerenciamento de informações de candidatos.
+
+O sistema permite cadastrar, consultar, editar e excluir currículos por meio de uma interface intuitiva, utilizando **PHP** para o backend e **MySQL** para persistência dos dados.
+
+O projeto foi desenvolvido como atividade acadêmica, aplicando conceitos de desenvolvimento web, banco de dados relacionais e integração entre frontend e backend.
 
 ---
 
-## Funcionalidades
+# 🎯 Objetivos
+
+* Desenvolver uma aplicação web utilizando PHP.
+* Aplicar operações CRUD.
+* Integrar a aplicação ao MySQL.
+* Utilizar banco de dados relacional.
+* Organizar informações de candidatos de forma centralizada.
+* Aplicar boas práticas de desenvolvimento web.
+
+---
+
+# ✨ Funcionalidades
 
 * Cadastro de candidatos
-* Cadastro de endereço
-* Visualização dos currículos cadastrados
+* Cadastro de endereços
+* Visualização de currículos
 * Listagem de candidatos
 * Atualização de informações
-* Exclusão de candidatos
+* Exclusão de registros
 * Integração com banco de dados MySQL
-* Interface desenvolvida em HTML e CSS
+* Interface desenvolvida em HTML5 e CSS3
 
 ---
 
-## Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
-| Tecnologia | Finalidade             |
+| Tecnologia | Utilização             |
 | ---------- | ---------------------- |
 | PHP        | Backend                |
 | MySQL      | Banco de Dados         |
 | phpMyAdmin | Administração do banco |
 | HTML5      | Estrutura das páginas  |
 | CSS3       | Estilização            |
-| SQL        | Manipulação dos dados  |
+| SQL        | Persistência dos dados |
 
 ---
 
-## Arquitetura do Sistema
+# 🏛️ Arquitetura
 
-O sistema segue uma arquitetura simples baseada em páginas PHP conectadas a um banco de dados MySQL.
+O sistema segue uma arquitetura tradicional baseada em PHP com separação entre interface, processamento e banco de dados.
 
 Fluxo principal:
 
-* Cadastro do candidato
-* Armazenamento no banco
-* Listagem dos candidatos
-* Visualização do currículo
-* Atualização das informações
-* Exclusão dos registros
+```text
+Usuário
+
+↓
+
+Páginas HTML
+
+↓
+
+Scripts PHP
+
+↓
+
+Banco MySQL
+
+↓
+
+Retorno para Interface
+```
 
 ---
 
-## Estrutura do Projeto
+# 📂 Estrutura do Projeto
 
 ```text
 SGC
 │
+├── index.html
 ├── cadastro.html
+├── sobre.html
+│
 ├── conexao.php
 ├── salvar_candidato.php
 ├── listar_candidatos.php
@@ -66,21 +117,21 @@ SGC
 ├── editar_candidato.php
 ├── atualizar_candidato.php
 ├── excluir_candidato.php
-├── sobre.html
-├── index.html
+│
 ├── style.css
 │
 ├── projeto_sgc_iasmimllc(banco).sql
+│
 └── BancoDeDados(Modelo Relacional).mwb
 ```
 
 ---
 
-## Banco de Dados
+# 🗄️ Banco de Dados
 
-O banco de dados foi modelado utilizando o MySQL Workbench e implementado em MySQL.
+O banco foi modelado utilizando o **MySQL Workbench** e implementado em **MySQL**.
 
-O projeto utiliza tabelas relacionadas para armazenar:
+O sistema possui tabelas responsáveis pelo gerenciamento de:
 
 * Candidatos
 * Endereços
@@ -89,13 +140,13 @@ O projeto utiliza tabelas relacionadas para armazenar:
 * Certificações
 * Cursos de Qualificação
 
-A estrutura relacional garante a integridade dos dados por meio de chaves primárias e estrangeiras.
+As tabelas são relacionadas através de chaves primárias e estrangeiras, garantindo a integridade dos dados.
 
 ---
 
-## Como Executar
+# 🚀 Como Executar
 
-### Pré-requisitos
+## Pré-requisitos
 
 * XAMPP
 * Apache
@@ -103,14 +154,33 @@ A estrutura relacional garante a integridade dos dados por meio de chaves primá
 * phpMyAdmin
 * Navegador Web
 
-### Passos
+## Instalação
 
-1. Clone este repositório.
-2. Copie a pasta do projeto para `htdocs`.
-3. Inicie o Apache e o MySQL no XAMPP.
-4. Importe o arquivo SQL no phpMyAdmin.
-5. Configure os dados de conexão em `conexao.php`.
-6. Acesse:
+Clone o repositório.
+
+```bash
+git clone https://github.com/iiaslaraa/SGC_SistemaGerenciadorDeCurriculo.git
+```
+
+Copie o projeto para a pasta **htdocs** do XAMPP.
+
+Inicie o Apache e o MySQL.
+
+Abra o phpMyAdmin.
+
+Importe o arquivo:
+
+```
+projeto_sgc_iasmimllc(banco).sql
+```
+
+Configure a conexão no arquivo:
+
+```
+conexao.php
+```
+
+Acesse:
 
 ```
 http://localhost/SGC/
@@ -118,19 +188,43 @@ http://localhost/SGC/
 
 ---
 
-## Melhorias Futuras
+# 📌 Estrutura do Sistema
 
+O sistema é composto pelas seguintes páginas:
+
+| Página                  | Função                      |
+| ----------------------- | --------------------------- |
+| index.html              | Página inicial              |
+| cadastro.html           | Cadastro de candidatos      |
+| listar_candidatos.php   | Lista de candidatos         |
+| curriculo.php           | Visualização do currículo   |
+| editar_candidato.php    | Alteração dos dados         |
+| atualizar_candidato.php | Atualização das informações |
+| excluir_candidato.php   | Exclusão do candidato       |
+| sobre.html              | Informações sobre o projeto |
+
+---
+
+# 📈 Melhorias Futuras
+
+* Sistema de autenticação
 * Upload de foto do candidato
 * Pesquisa avançada
-* Filtros por formação
-* Login de usuários
-* Controle de permissões
-* Exportação de currículos em PDF
+* Exportação para PDF
 * Responsividade para dispositivos móveis
+* Dashboard administrativo
+* Filtros por formação acadêmica
+* Filtros por experiência profissional
 
 
 ---
 
-## Licença
+# 📄 Licença
 
 Este projeto foi desenvolvido exclusivamente para fins acadêmicos.
+
+Sua utilização é permitida para estudos e aprendizagem.
+
+
+
+---
