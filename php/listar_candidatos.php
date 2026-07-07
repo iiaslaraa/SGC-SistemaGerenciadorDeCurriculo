@@ -7,7 +7,7 @@ require_once 'conexao.php';
 <head>
   <meta charset="UTF-8">
   <title>SGC — Lista de Candidatos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 

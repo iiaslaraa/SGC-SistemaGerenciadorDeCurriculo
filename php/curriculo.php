@@ -37,7 +37,7 @@ $res_cursos = mysqli_query($conexao, $sql_cursos);
 <head>
   <meta charset="UTF-8">
   <title>Currículo — <?php echo htmlspecialchars($c['nome']); ?></title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 

@@ -28,7 +28,7 @@ $c = mysqli_fetch_array($res, MYSQLI_ASSOC);
 
 <!--  CRIAR FOLHA DE ESTILO ESPECÍFICA -->
 <!-- Vincula a folha de estilos externa -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 

@@ -1,4 +1,5 @@
 <?php
+<link rel="stylesheet" href="../assets/css/style.css">
 // salvar_candidato.php — SGC
 require_once 'conexao.php';
 

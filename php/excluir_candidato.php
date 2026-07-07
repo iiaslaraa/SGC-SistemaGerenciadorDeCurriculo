@@ -1,4 +1,5 @@
 <?php
+<link rel="stylesheet" href="../assets/css/style.css">
 // excluir_candidato.php — SGC
 require_once 'conexao.php';
 
