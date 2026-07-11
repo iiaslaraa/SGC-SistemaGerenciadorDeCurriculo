@@ -183,7 +183,7 @@ conexao.php
 Acesse:
 
 ```
-http://localhost/SGC/
+[http://localhost/SGC/](http://localhost/SGC-SistemaGerenciadorDeCurriculo/)
 ```
 
 ---
