@@ -60,6 +60,19 @@ O projeto foi desenvolvido como atividade acadêmica, aplicando conceitos de des
 
 ---
 
+
+# 🖥️ Telas do Sistema
+
+Capturas de tela poderão ser adicionadas futuramente na pasta `docs/screenshots`, apresentando as principais funcionalidades do sistema:
+
+- Página Inicial
+- Cadastro de Candidato
+- Listagem de Candidatos
+- Visualização do Currículo
+- Banco de Dados
+
+---
+
 # 🛠️ Tecnologias Utilizadas
 
 | Tecnologia | Utilização             |
@@ -104,27 +117,40 @@ Retorno para Interface
 # 📂 Estrutura do Projeto
 
 ```text
-SGC
+SGC-SistemaGerenciadorDeCurriculo
 │
-├── index.html
+├── assets
+│   ├── css
+│   │   └── style.css
+│   └── images
+│       └── logo-SGC-2.1.png
+│
+├── database
+│   ├── projeto_sgc_iasmimllc(banco).sql
+│   └── BancoDeDados(Modelo Relacional).mwb
+│
+├── docs
+│   ├── CHANGELOG.md
+│   ├── Documentacao_Tecnica.md
+│   ├── Manual_Instalacao.md
+│   ├── Manual_Usuario.md
+│   └── screenshots/
+│
+├── php
+│   ├── conexao.php
+│   ├── salvar_candidato.php
+│   ├── listar_candidatos.php
+│   ├── curriculo.php
+│   ├── editar_candidato.php
+│   ├── atualizar_candidato.php
+│   └── excluir_candidato.php
+│
 ├── cadastro.html
+├── index.html
 ├── sobre.html
-│
-├── conexao.php
-├── salvar_candidato.php
-├── listar_candidatos.php
-├── curriculo.php
-├── editar_candidato.php
-├── atualizar_candidato.php
-├── excluir_candidato.php
-│
-├── style.css
-│
-├── projeto_sgc_iasmimllc(banco).sql
-│
-└── BancoDeDados(Modelo Relacional).mwb
+├── .gitignore
+└── README.md
 ```
-
 ---
 
 # 🗄️ Banco de Dados
@@ -171,19 +197,19 @@ Abra o phpMyAdmin.
 Importe o arquivo:
 
 ```
-projeto_sgc_iasmimllc(banco).sql
+database/projeto_sgc_iasmimllc(banco).sql
 ```
 
 Configure a conexão no arquivo:
 
 ```
-conexao.php
+php/conexao.php
 ```
 
 Acesse:
 
 ```
-[http://localhost/SGC/](http://localhost/SGC-SistemaGerenciadorDeCurriculo/)
+http://localhost/SGC-SistemaGerenciadorDeCurriculo/
 ```
 
 ---
@@ -208,22 +234,24 @@ O sistema é composto pelas seguintes páginas:
 # 📈 Melhorias Futuras
 
 * Sistema de autenticação
-* Upload de foto do candidato
-* Pesquisa avançada
-* Exportação para PDF
-* Responsividade para dispositivos móveis
+* Controle de permissões
 * Dashboard administrativo
-* Filtros por formação acadêmica
-* Filtros por experiência profissional
-
+* Pesquisa avançada
+* Filtros por formação
+* Filtros por experiência
+* Exportação em PDF
+* Upload de foto
+* Responsividade
 
 ---
 
 # 📄 Licença
 
-Este projeto foi desenvolvido exclusivamente para fins acadêmicos.
+# 📄 Licença
 
-Sua utilização é permitida para estudos e aprendizagem.
+Este projeto foi desenvolvido para fins acadêmicos durante o Curso Técnico em Informática da Escola Técnica de Brasília (ETB).
+
+Seu código pode ser utilizado como material de estudo, desde que sejam mantidos os devidos créditos à autora.
 
 
 
