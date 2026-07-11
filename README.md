@@ -247,8 +247,6 @@ O sistema é composto pelas seguintes páginas:
 
 # 📄 Licença
 
-# 📄 Licença
-
 Este projeto foi desenvolvido para fins acadêmicos durante o Curso Técnico em Informática da Escola Técnica de Brasília (ETB).
 
 Seu código pode ser utilizado como material de estudo, desde que sejam mantidos os devidos créditos à autora.
