@@ -28,7 +28,7 @@ $pais = mysqli_real_escape_string($conexao, trim($_POST['pais']));
 
 // Validação mínima
 if (empty($nome) || empty($email)) {
-    die('Erro: Nome e e-mail são obrigatórios. <a href="cadastro.html">Voltar</a>');
+    die('Erro: Nome e e-mail são obrigatórios. <a href="../cadastro.html">Voltar</a>');
 }
 
 // Monta e executa a query INSERT

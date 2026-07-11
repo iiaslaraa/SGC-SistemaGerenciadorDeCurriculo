@@ -14,7 +14,7 @@ $id = (int) $_GET['id'];
 $check = mysqli_query($conexao, "SELECT idCandidato, idEndereco, nome FROM candidato WHERE idCandidato = $id LIMIT 1");
 
 if (!$check || mysqli_num_rows($check) === 0) {
-    die('Candidato não encontrado. <a href="listar_candidatos.php">Voltar</a>');
+    die('Candidato não encontrado. <a href="../listar_candidatos.php">Voltar</a>');
 }
 $candidato = mysqli_fetch_assoc($check);
 
@@ -43,10 +43,10 @@ if (!$delEndereco) {
 $linhas = mysqli_affected_rows($conexao);
 
 if ($linhas === 0) {
-    die('Nenhum registro foi removido. <a href="listar_candidatos.php">Voltar</a>');
+    die('Nenhum registro foi removido. <a href="../listar_candidatos.php">Voltar</a>');
 }
 
 // Redireciona para a listagem com mensagem de sucesso via query string
-header('Location: listar_candidatos.php?msg=excluido&nome=' . urlencode($nome));
+header('Location: ../listar_candidatos.php?msg=excluido&nome=' . urlencode($nome));
 exit;
 ?>

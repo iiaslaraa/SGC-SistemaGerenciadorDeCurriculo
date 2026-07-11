@@ -13,13 +13,13 @@ require_once 'conexao.php';
 
 <!-- CABEÇALHO DO SISTEMA -->
 <header>
-    <a href="index.html"><img src="logo-SGC-2.1.png" alt="Logo do Site" class="logo"></a>
+    <a href="../index.html"><img src="../assets/images/logo-SGC-2.1.png" alt="Logo do Site" class="logo"></a>
 </header>
 
 <nav>
-    <a href="index.html">Início</a>
-    <a href="cadastro.html">Novo Candidato</a>
-    <a href="sobre.html">
+    <a href="../index.html">Início</a>
+    <a href="../cadastro.html">Novo Candidato</a>
+    <a href="../sobre.html">
       Sobre o SGC
     </a>
 </nav>
@@ -69,7 +69,7 @@ if ($total === 0) {
 ?>
 <hr></hr>
 <br>
-<a href="cadastro.html" class='btn btn-success'>+ Novo Candidato</a>
+<a href="../cadastro.html" class='btn btn-success'>+ Novo Candidato</a>
 
 <!-- RODAPÉ -->
 <footer>
