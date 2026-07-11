@@ -5,7 +5,7 @@ require_once 'conexao.php';
 
 // Verifica se o formulário foi submetido via POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: cadastro.html');
+    header('Location: ../cadastro.html');
     exit;
 }
 
