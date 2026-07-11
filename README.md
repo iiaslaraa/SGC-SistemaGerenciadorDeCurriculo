@@ -159,7 +159,7 @@ As tabelas são relacionadas através de chaves primárias e estrangeiras, garan
 Clone o repositório.
 
 ```bash
-git clone https://github.com/iiaslaraa/SGC_SistemaGerenciadorDeCurriculo.git
+git clone https://github.com/iiaslaraa/SGC-SistemaGerenciadorDeCurriculo.git
 ```
 
 Copie o projeto para a pasta **htdocs** do XAMPP.
